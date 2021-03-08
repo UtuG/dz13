@@ -1,0 +1,452 @@
+@charset "UTF-8";
+
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@400&700&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Lora:wght@700&display=swap");
+
+/* *******RESET****** */
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+input::-ms-clear {
+  display: none;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+aside,
+nav,
+footer,
+header,
+section {
+  display: block;
+}
+
+:focus,
+:active {
+  outline: none;
+}
+
+a:focus,
+a:active {
+  outline: none;
+}
+
+* {
+  padding: 0px;
+  margin: 0px;
+  border: 0px;
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  /* Теперь размеры блоков включают в себя поля и рамки.
+	Все отступы и рамки обнулены. */
+}
+
+ul li {
+  list-style: none;
+  /* Отмена стилизвции списков. */
+}
+
+a,
+a:visited {
+  text-decoration: none;
+  /* Обнуляет стилизацию посещенных ссылок. */
+}
+
+a:hover {
+  text-decoration: none;
+  /* Обнуляет стилизацию для ссылок, которая появляеться при наведении на них курсора. */
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: inherit;
+  font-size: inherit;
+  /* Значения будут унаследованы от родителя. */
+}
+
+img {
+  vertical-align: top;
+  /* Выравнивание верхнего края элемента по верху самого высокого элемента строки. */
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+textarea {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
+/* Лечит кроссбраузерность инпутов и текстэриа */
+
+input {
+  border-radius: 0px !important;
+}
+
+/* Лечит все дефолтные закругления в разных ОС */
+
+input,
+button,
+textarea {
+  font-family: "Lato";
+}
+
+/* Наследование шрифта для инпутов, кнопок и зон для текста из импортного */
+
+button {
+  cursor: pointer;
+}
+
+/* курсор-указатель для всех кнопок */
+
+body {
+  line-height: 1;
+  color: black;
+  font-size: 14px;
+  background-color: white;
+  font-weight: auto;
+  font-style: normal;
+  font-display: swap;
+  font-family: "Lato";
+  text-rendering: optimizeLegibility;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+/* Высота линии, цвет текста, шрифт и его размер по умолчанию,  */
+
+/* *******RESET****** */
+
+body {
+  line-height: 1;
+  color: #6a6a6aff;
+  font-size: 20px;
+  background-color: #ffffffff;
+  font-family: Lato;
+  font-style: normal;
+  font-weight: 400;
+}
+
+.container {
+  width: 1110px;
+  margin: 0px auto;
+  padding: 61px 0px;
+}
+
+.title-Playfair {
+  font-family: Playfair Display;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 32px;
+  color: #10375cff;
+}
+
+.title-Playfair__settings {
+  width: 89px;
+  height: 32px;
+  margin-right: 184px;
+}
+
+.header-Frispes {
+  position: relative;
+}
+
+.navlist {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+}
+
+.navlist_position {
+  top: 8px;
+  left: 273px;
+}
+
+.navlist > li {
+  display: inline-block;
+  margin-right: 29px;
+  position: relative;
+  cursor: pointer;
+}
+
+.navlist > :last-child {
+  margin-right: 0px;
+}
+
+.navlist__navlink {
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 28px;
+  color: black;
+}
+
+.navlist__navsublist {
+  border: 5px solid #dd2c00ff;
+  display: none;
+  background-color: #10375cff;
+  color: white;
+  padding: 0px;
+  padding-right: 15px;
+  cursor: pointer;
+}
+
+.navlist__navsublist_position {
+  top: 75%;
+  right: 33%;
+  position: absolute;
+}
+
+.navlist__navsublink {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 28px;
+}
+
+.navlist > li:hover .navlist__navsublist {
+  z-index: 10000;
+  display: block;
+}
+
+.login {
+  color: #dd2c00ff;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 19px;
+  width: 92px;
+  height: 43px;
+}
+
+.login_position {
+  display: inline-block;
+  position: absolute;
+  top: 8px;
+  right: 102px;
+}
+
+.signup {
+  width: 102px;
+  height: 43px;
+  background-color: #dd2c00ff;
+  color: white;
+  padding: 12px 24px;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 19px;
+}
+
+.signup_position {
+  display: inline-block;
+  position: absolute;
+  top: -4px;
+  right: 0px;
+}
+
+.presentation {
+  position: relative;
+  width: 1110px;
+  height: 909px;
+  z-index: 2;
+}
+
+.presentation__span {
+  color: #dd2c00ff;
+}
+
+.presentation__banner {
+  font-family: Lora;
+  font-style: normal;
+  font-weight: bold;
+  color: #10375cff;
+}
+
+.presentation__banner_big {
+  width: 667px;
+  height: 201px;
+  font-size: 52px;
+  line-height: 67px;
+  display: block;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+}
+
+.presentation__shell {
+  position: relative;
+  top: 94px;
+  width: 667px;
+  height: 201px;
+}
+
+.presentation__shell::before {
+  content: "Introducing";
+  width: 101px;
+  height: 30px;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 30px;
+  font-family: Lato;
+  position: absolute;
+  top: -40px;
+  color: black;
+}
+
+.presentation__shell::after {
+  content: "";
+  width: 73px;
+  height: 2px;
+  background-color: black;
+  position: absolute;
+  top: -23.5px;
+  left: 116px;
+}
+
+.presentation .message {
+  color: #6a6a6aff;
+  font-family: Lato;
+  font-style: normal;
+  font-weight: 400;
+}
+
+.presentation__message_big {
+  width: 382px;
+  height: 120px;
+  line-height: 30px;
+  position: absolute;
+  top: 104px;
+  left: 728px;
+}
+
+.presentation .box {
+  color: white;
+  font-family: Lato;
+  font-style: normal;
+  font-weight: 400;
+  background-color: #10375cff;
+}
+
+.presentation__box_big {
+  width: 445px;
+  height: 459px;
+}
+
+.presentation__box {
+  display: inline-block;
+  position: absolute;
+  top: 366px;
+  left: 0px;
+}
+
+.presentation .headliner {
+  font-family: Lora;
+  font-style: normal;
+  font-weight: bold;
+  color: white;
+}
+
+.presentation__headlinerAboveInput {
+  font-size: 34px;
+  line-height: 44px;
+  padding: 42px 72px 373px 40px;
+}
+
+.presentation__input {
+  width: 365px;
+  height: 68px;
+  background-color: #0d2c4aff;
+  color: white;
+  position: relative;
+  text-indent: 210px;
+}
+
+.presentation__input_locationselect {
+  margin-top: 29px;
+  margin-bottom: 17px;
+}
+
+.presentation__input_typeselect {
+  margin-bottom: 17px;
+}
+
+.presentation__input_dateselect {
+  margin-bottom: 22px;
+  text-indent: 107px;
+}
+
+.presentation__button {
+  width: 363px;
+  height: 53px;
+  font-family: Lato;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 28px;
+  color: white;
+  background-color: #ff5722ff;
+  padding: 12.5px 114px;
+}
+
+.presentation__form_input label {
+  font-family: Lato;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 26px;
+  color: #6a6a6aff;
+}
+
+.presentation__form_input .presentation__label1 {
+  position: absolute;
+  top: 123px;
+  left: 56px;
+  z-index: 1;
+}
+
+.presentation__form_input .presentation__label2 {
+  position: absolute;
+  top: 208px;
+  left: 56px;
+  z-index: 1;
+}
+
+.presentation__form_input .presentation__label3 {
+  position: absolute;
+  top: 293px;
+  left: 56px;
+  z-index: 1;
+}
+
+.presentation__img {
+  width: 960px;
+  height: 598.05px;
+  position: absolute;
+  top: -74px;
+  left: 315px;
+  z-index: -1;
+}
